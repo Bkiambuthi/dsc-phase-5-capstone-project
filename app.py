@@ -47,7 +47,7 @@ uploaded_file = st.file_uploader("Choose an image...", type="jpg")
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
-    st.image(image, caption='Uploaded Image.', use_column_width=True, width=300)  # Reduce the width of the displayed image
+    st.image(image, caption='Uploaded Image.', use_column_width=True, width=100)  # Reduce the width of the displayed image
     st.write("")
     st.write("Classifying the image")
 
