@@ -14,25 +14,27 @@ def add_background_image(image_file):
     .stApp {{
         background-image: url(data:image/png;base64,{encoded});
         background-size: cover;
-        color: black; /* Set all text color to black */
+        color: white; /* Set all text color to white */
+        font-size: 18px; /* Increase font size */
     }}
     </style>
     """
     st.markdown(css, unsafe_allow_html=True)
 
 # Add your background image from the local file in the repo
-add_background_image('image.jpeg')
+add_background_image('rice_farmer.jpeg')
 
 # Load the pickled model
 with open('model.pkl', 'rb') as f:
     model = pickle.load(f)
 
-# Apply global CSS to set all text color to black
+# Apply global CSS to set all text color to white and increase font size
 st.markdown(
     """
     <style>
     .stApp {{
-        color: black;
+        color: white;
+        font-size: 18px;
     }}
     </style>
     """,
