@@ -22,7 +22,7 @@ def add_background_image(image_file):
     st.markdown(css, unsafe_allow_html=True)
 
 # Add your background image from the local file in the repo
-add_background_image('image.jpeg')
+add_background_image('image1.jpeg')
 
 # Load the pickled model
 with open('model.pkl', 'rb') as f:
