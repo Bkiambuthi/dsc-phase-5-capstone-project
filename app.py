@@ -58,7 +58,7 @@ if uploaded_file is not None:
 
     # Make prediction
     prediction = model.predict(image)
-    class_names = ['Arborio', 'Basmati', 'Ipsala', 'Jasmine', 'Karacadag']  # Replace with your actual class names
+    class_names = ['Arborio', 'Basmati', 'Ipsala', 'Jasmined', 'Karacadag']  # Replace with your actual class names
     predicted_class = class_names[np.argmax(prediction)]
 
     st.write(f'Predicted class: {predicted_class}')
